@@ -170,9 +170,9 @@
               <div class="bg-white lg:p-2 p-8 rounded-lg pb-6">
                 <h3 class="text-2xl p-4 font-medium tex-[#111] my-6">Have Couppon?</h3>
                 <p class="flex">
-                  <input class="p-2  rounded-l-lg border" type="text"   placeholder="coupon code" name="" >
+                  <input id="coupon-code" class="p-2  rounded-l-lg border" type="text"   placeholder="coupon code" name="" >
                   
-                  <span class="bg-[#E527B2] text-white text-xl font-normal p-2 rounded-r-lg"><button>Apply</button></span> </p>
+                  <span  class="bg-[#E527B2] text-white text-xl font-normal p-2 rounded-r-lg  "><button onclick="applyFunction()">Apply</button></span> </p>
 
               </div>
 
@@ -184,7 +184,7 @@
                <hr class="w-full h-0.5 mt-4 bg-gray-100">
                <h4 id="h4" class="text-[#111] font-medium text-2xl mt-4">Total price: <span id="total-price" class="text-gray-400">00</span>TK </h4>
               <h4 class="text-[#111] font-medium text-2xl  mt-4"> Discount : <span id="discount" class="text-gray-400">00</span>TK </h4>
-              <h4 class="text-[#111] font-medium text-2xl  mt-4"> Total: <span class="text-gray-400">205.60</span> TK</h4>
+              <h4 class="text-[#111] font-medium text-2xl  mt-4"> Total: <span id="grand-total" class="text-gray-400">00</span> TK</h4>
                 <hr class="w-full h-0.5 mt-4 mb-10 bg-gray-100">
               </div>
 
@@ -192,7 +192,7 @@
               <div><button class=" text-xl font-semibold text-center text-white bg-[#E527B2]  py-2 absolute -mt-6 rounded-lg w-48 ml-11">Make Purchase</button></div> -->
               
               <!-- The button to open modal -->
-            <a href="#my_modal_8" class=" text-xl font-semibold text-center text-white bg-[#E527B2]  py-2 absolute -mt-6 rounded-lg w-48 ml-11">Make Purchase</a>
+            <a href="#my_modal_8" id="make-purchase"  class=" text-xl font-semibold text-center text-white bg-[#E527B2]  py-2 absolute -mt-6 rounded-lg w-48 ml-11 ">Make Purchase</a>
                   <!-- Put this part before </body> tag -->
                       <div class="modal " id="my_modal_8">
                         <div class="modal-box justify-center content-center">
